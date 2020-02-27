@@ -21,5 +21,18 @@
   <body>
   <div class="box red"></div>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.js" ></script>
+    <script>
+   anime({
+targets: 'div.box.red',
+translateY: [
+{ value: 200, duration: 500 },
+{ value: 0, duration: 800 }
+],
+rotate:{
+value: '1turn',
+easing: 'easeInOutSine'
+}
+});
+    </script>
   </body>
 </html>
